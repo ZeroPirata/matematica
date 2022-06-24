@@ -17,11 +17,11 @@ def matriz(n):
     meio.pop(n)
     meio.insert(n, '*')
     for camada in camadas:
-        print(re.sub('[^a-zA-Z]', ' ', str(camada)))
-    print(re.sub('[^a-zA-Z-*]', ' ', str(meio)))
+        print(re.sub('[^a-zA-Z]',' ', str(camada)))
+    print(re.sub('[^a-zA-Z-*]',' ', str(meio)))
     camadas.reverse()
     for camada in camadas:
-        print(re.sub('[^a-zA-Z]', ' ', str(camada)))
+        print(re.sub('[^a-zA-Z]',' ', str(camada)))
 if 1  <= cmd_prompt and cmd_prompt <= 52:
     print()
     matriz(cmd_prompt)
